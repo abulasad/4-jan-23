@@ -1,0 +1,36 @@
+/* 
+ extra small  ----------------------    <576px;
+ small ------------------sm----------   >=576px; 
+ medium -----------------md ----------  >=768px; 
+ large ------------------lg ----------- >=992px;
+ extra large ------------xl ----------- >=1200px;
+ extra extra lage -------xxl ---------- >=1400px;
+ 
+ 
+ 
+ 
+ extra small  ----------------------    <100%;
+ small ------------------sm----------   >=540; 
+ medium -----------------md ----------  >=720px; 
+ large ------------------lg ----------- >=960px;
+ extra large ------------xl ----------- >=1140;
+ extra extra lage -------xxl ---------- >=1320;
+
+
+
+
+*/
+
+.row {
+  margin-bottom: 20px;
+  height: 200px;
+  background: blue;
+}
+
+.row div div {
+  background-color: cornflowerblue;
+  /* border: 2px solid green; */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootstrap demo</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+   <h1 class="text-center">Accordion</h1>
+
+
+   <div class="container">
+      <div class="row">
+         <div class="accordion">
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button data-bs-toggle="collapse" data-bs-target="#collapse1"
+                     class="accordion-button">Accordion#1</button>
+               </h2>
+               <div id="collapse1" class="accordion-collapse">
+                  <p class="accordion-body">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus impedit architecto, fugiat qui
+                     autem
+                     culpa aliquam! Tempora ea suscipit labore, odio officia soluta error ipsa laboriosam hic libero
+                     vitae ex
+                     repudiandae laborum sunt cum ipsam quibusdam voluptate omnis. Aut delectus laboriosam eius ex
+                     placeat.
+                     Nostrum ab quo asperiores! Dolorem, maiores!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <br><br><br>
+
+   <h1 class="text-center">Alert!</h1>
+
+   <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Alert!</strong> Our service expired within last 2 hours! Quickly enroled!
+      <button type="button" class="btn-close" data-bs-dismiss="alert" "></button>
+   </div>
+
+   <br><br>
+     
+   <div id=" liveAlertPlaceholder">
+   </div>
+   <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+   <br>
+   <br>
+
+   <h1 class="text-center">Breadcrumb</h1>
+   <nav style="--bs-breadcrumb-divider :'>';">
+      <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Home</a></li>
+         <li class="breadcrumb-item active"><a class="text-decoration-none" href="#">Article</a></li>
+      </ol>
+   </nav>
+
+   <br><br>
+   <h1 class="text-center">Button</h1>
+
+   <button type="button" class="btn btn-primary">Click here</button>
+   <button type="button" class="btn btn-secondary">Click here</button>
+   <button type="button" class="btn btn-success">Click here</button>
+   <button type="button" class="btn btn-danger">Click here</button>
+   <button type="button" class="btn btn-warning">Click here</button>
+   <button type="button" class="btn btn-info">Click here</button>
+   <button type="button" class="btn btn-light">Click here</button>
+   <button type="button" class="btn btn-dark">Click here</button>
+   <button type="button" class="btn btn-link">link</button>
+
+   <br>
+   <h2 class="text-center">input button</h2>
+   <a class="btn btn-primary" href="https://www.facebook.com/maazihadin/">go to facebook</a>
+
+   <input type="submit" value="Log in" class="btn btn-success">
+
+   <input type="reset" value="Reset All" class="btn btn-danger">
+   <br>
+   <h2 class="text-center">button outline</h2>
+   <button class="btn btn-outline-danger" type="button">Primary</button>
+   <br>
+   <button type="button" class="btn btn-primary btn-lg">Button Large</button>
+
+   <br>
+   <h2 class="text-center">Block button</h2>
+
+   <div class="d-grid gap-2">
+      <button class="btn btn-danger" type="button">Button 1</button>
+      <button class="btn btn-danger" type="button">Button 2</button>
+   </div>
+   <br>
+   <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-warning" type="button">Button 1</button>
+      <button class="btn btn-warning" type="button">Button 2</button>
+   </div>
+   <br><br>
+   <h2 class="text-center">button group</h2>
+   <div class="btn-group">
+      <button type="button" class="btn btn-primary">Click here</button>
+      <button type="button" class="btn btn-secondary">Click here</button>
+      <button type="button" class="btn btn-success">Click here</button>
+   </div>
+   <h2 class="text-center">button toolbar</h2>
+   <div class="btn-toolbar">
+      <div class="btn-group me-2">
+         <button type="button" class="btn btn-primary">1</button>
+         <button type="button" class="btn btn-secondary">2</button>
+         <button type="button" class="btn btn-success">3</button>
+         <button type="button" class="btn btn-info">4</button>
+      </div>
+      <div class="btn-group">
+         <button type="button" class="btn btn-primary">5</button>
+         <button type="button" class="btn btn-secondary">6</button>
+         <button type="button" class="btn btn-success">7</button>
+         <button type="button" class="btn btn-info">8</button>
+      </div>
+   </div>
+   <br><br>
+
+   <h2 class="text-center">Select tag</h2>
+   <select class="form-select" name="" id="">
+      <option selected>Open this select menu</option>
+      <option value="1">Mango</option>
+      <option value="2">Pinaple</option>
+      <option value="3">Banana</option>
+   </select>
+   <br>
+   <h2 class="text-center">Check box & radio</h2>
+
+   <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="" id="check">
+      <label for="check">Aam</label>
+
+   </div>
+
+   <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="" id="check2">
+      <label for="check2">Jaam</label>
+   </div>
+   <br><br>
+   <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="check4">
+      <label for="check4">male</label>
+   </div>
+   <div class="form-check">
+      <input class="form-check-input" type="radio" name="gender" id="check3">
+      <label for="check3">Female</label>
+   </div>
+   <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" name="gender" id="check35">
+      <label for="check35">Female</label>
+   </div>
+   <br>
+
+   <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">1</label>
+   </div>
+   <br><br>
+   <h2 class="text-center">checkbox toggle button</h2>
+
+   <input class="btn-check" type="checkbox" name="" id="c1">
+   <label class="btn btn-danger" for="c1">Bangladesh</label>
+   <br> <br>
+   <input class="btn-check" type="radio" name="" id="c2">
+   <label class="btn btn-info" for="c2">America</label>
+   <br>
+
+   <input class="form-range" min="0" max="10" type="range" name="" id="">
+   <br><br>
+   <h2 class="text-center">Inpur Group</h2>
+
+   <div class="input-group mb-3">
+      <span class="input-group-text">#</span>
+      <input class="form-control" placeholder="User Name" type="text">
+   </div>
+
+   <div class="input-group">
+      <input class="form-control" type="text" placeholder="User Name">
+      <span class="input-group-text">#</span>
+      <input class="form-control" placeholder="Server Name" type="text">
+   </div>
+
+   <div class="input-group">
+      <div class="input-group-text">
+         <input class="form-check-input" type="checkbox" name="" id="">
+      </div>
+
+      <input type="text" name="" id="" class="from-control">
+   </div>
+   <br><br>
+
+   <div class="input-group">
+      <span class="input-group-text">First and last name</span>
+      <input type="text" class="form-control">
+      <input type="text" class="form-control">
+   </div>
+
+   <br>
+
+
+   <div class="input-group">
+      <span class="input-group-text">$</span>
+      <span class="input-group-text">0.00</span>
+      <input class="form-control" type="text">
+   </div>
+
+   <br>
+
+   <div class="input-group">
+      <button class="btn btn-outline-primary">Button</button>
+      <input class="form-control" type="text">
+   </div>
+   <br>
+   <br>
+
+   <div class="input-group">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Button</button>
+      <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="#">Action 1</a></li>
+         <li><a class="dropdown-item" href="#">Action 2</a></li>
+         <li><a class="dropdown-item" href="#">Action 3</a></li>
+      </ul>
+      <input class="form-control" type="text">
+   </div>
+   <br>
+   <div class="input-group">
+      <button class="btn btn-outline-primary">Action</button>
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
+      <ul class="dropdown-menu">
+         <li><a class="dropdown-item" href="#">Action 1</a></li>
+         <li><a class="dropdown-item" href="#">Action 2</a></li>
+         <li><a class="dropdown-item" href="#">Action 3</a></li>
+      </ul>
+      <input class="form-control" type="text">
+   </div>
+
+   <br>
+   <div class="form-floating">
+      <input class="form-control" type="email" id="label1">
+      <label for="label1">Email Address</label>
+   </div>
+   <br>
+   <div class="form-floating mb-3">
+      <input type="email" class="form-control is-valid" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+   </div>
+   <br><br>
+   <h2 class="text-center">Bootstrap Card</h2>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+            <div class="card">
+               <div class="text-center card-header">Images 1</div>
+               <img
+                  src="https://images.unsplash.com/photo-1535381273077-21e00c27b1b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt="card">
+               <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugit quasi
+                     itaque eius,
+                     consectetur expedita alias.
+                     Voluptate similique placeat eum vero laudantium perspiciatis eaque animi, maxime reprehenderit
+                     sequi facilis, rem quis
+                     aut id eius iusto inventore soluta eos voluptatibus fugit maiores! Asperiores, officiis harum?
+                     Ipsa, totam alias!
+                     Maiores, neque deleniti.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card">
+               <div class="text-center card-header">Images 2</div>
+               <img
+                  src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt="card">
+               <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugit quasi
+                     itaque eius,
+                     consectetur expedita alias.
+                     Voluptate similique placeat eum vero laudantium perspiciatis eaque animi, maxime reprehenderit
+                     sequi facilis, rem quis
+                     aut id eius iusto inventore soluta eos voluptatibus fugit maiores! Asperiores, officiis harum?
+                     Ipsa, totam alias!
+                     Maiores, neque deleniti.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card">
+               <div class="text-center card-header">Images 3</div>
+               <img
+                  src="https://plus.unsplash.com/premium_photo-1664374288232-972a9c144ab7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                  alt="card">
+               <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugit quasi
+                     itaque eius,
+                     consectetur expedita alias.
+                     Voluptate similique placeat eum vero laudantium perspiciatis eaque animi, maxime reprehenderit
+                     sequi facilis, rem quis
+                     aut id eius iusto inventore soluta eos voluptatibus fugit maiores! Asperiores, officiis harum?
+                     Ipsa, totam alias!
+                     Maiores, neque deleniti.</p>
+               </div>
+               <div class="card-footer">
+                  something
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="row">
+         <div class="col-md-4">
+            <div class="card" style="width:18rem">
+               <ul class="list-group">
+                  <li class="list-group-item">Item something 1</li>
+                  <li class="list-group-item">Item something 2</li>
+                  <li class="list-group-item">Item something 3</li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card" style="width:18rem">
+               <div class="card-header">Featured</div>
+               <ul class="list-group">
+                  <li class="list-group-item">Item something 1</li>
+                  <li class="list-group-item">Item something 2</li>
+                  <li class="list-group-item">Item something 3</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card">
+               <img
+                  src="https://plus.unsplash.com/premium_photo-1661607046089-56e8f12ee0f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="to little girls">
+               <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem ab
+                     hic, natus
+                     pariatur aliquam.</p>
+                  <a class="btn btn-info " href="#">Some here</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4">
+            <div class="card text-center">
+               <div class="card-header">See here</div>
+               <div class="card-body">
+                  <blockquote class="blocquote">
+                     <p>A well known quote, contained in a blocquote element.</p>
+                     <footer class="blockquote-footer"> <cite
+                           title="source title is better than any other comment. ">Jhon</cite> Abraham lincoln.</footer>
+                  </blockquote>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="col-md-4">
+      <div class="card">
+
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem ab
+               hic, natus
+               pariatur aliquam.</p>
+            <a class="btn btn-info " href="#">Some here</a>
+         </div>
+         <img class="card-img-bottom"
+            src="https://plus.unsplash.com/premium_photo-1661607046089-56e8f12ee0f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="to little girls">
+      </div>
+   </div>
+
+   <div class="col-md-4">
+      <div class="card">
+         <img
+            src="https://plus.unsplash.com/premium_photo-1661607046089-56e8f12ee0f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="to little girls">
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem ab
+               hic, natus
+               pariatur aliquam.</p>
+            <a class="btn btn-info " href="#">Some here</a>
+         </div>
+      </div>
+   </div>
+   <br><br>
+
+
+   <div class="row">
+      <div class="col-md-4">
+         <div class="card text-bg-danger">
+            <img class="card-img"
+               src="https://images.unsplash.com/photo-1612810806563-4cb8265db55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"
+               alt="Tesla Logo">
+            <div class="card-img-overlay">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi expedita ea quae
+                  veniam repudiandae?
+               </p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt odit nisi ab id amet, maiores
+                  recusandae voluptates rerum perferendis officiis sapiente doloribus saepe est laudantium culpa
+                  consectetur reiciendis reprehenderit! Earum beatae iste corrupti numquam voluptatibus excepturi? Quod
+                  animi rerum quidem porro omnis doloribus voluptas, nulla quibusdam aperiam quo. Asperiores dignissimos
+                  illum facilis eius architecto mollitia quo necessitatibus, enim reiciendis?</p>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-8">
+         <div class="card">
+            <div class="row">
+               <div class="cod-md-4">
+                  <img class="img-fluid rounded-start"
+                     src="https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                     alt="Tesla Logo">
+               </div>
+               <div class="cod-md-8">
+                  <div class="card-body">
+                     <h4 class="card-title">Card Title</h4>
+                     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dolor dicta
+                        pariatur iste soluta
+                        nostrum maiores tempore, maxime beatae assumenda ipsam excepturi aliquam veniam reprehenderit
+                        sequi molestias accusamus voluptate. Odio pariatur inventore ad fugiat. Molestiae quas deserunt
+                        est enim quidem ullam quos, facere quia a quo animi. Eos dignissimos soluta veniam voluptas,
+                        earum quas perspiciatis officiis libero ipsa, hic impedit!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+         <div class="col-md-4">
+            <img
+               src="https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+               class="img-fluid rounded-start" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+         <h5 class="card-title">Primary card title</h5>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+      </div>
+   </div>
+
+   <br><br>
+
+   <h2 class="text-center">Carousel</h2>
+
+
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img
+               src="https://images.unsplash.com/photo-1614680376709-5b900baa7119?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>First slide label</h5>
+               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://plus.unsplash.com/premium_photo-1661603793347-34e3b0641223?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Second slide label</h5>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Third slide label</h5>
+               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+         </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </a>
+   </div>
+   <br><br>
+
+
+
+   <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img
+               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://plus.unsplash.com/premium_photo-1661597189120-2284037a23e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://images.unsplash.com/photo-1616123654498-f864ac762231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+         data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+         data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+
+   <br>
+   <br>
+   <h2 class="text-center">carousel cross fade</h2>
+   <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img
+               src="https://images.unsplash.com/photo-1566312922674-e02730f7b912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://images.unsplash.com/photo-1617975251604-afb8224b096f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://plus.unsplash.com/premium_photo-1661607088486-24ac718c7f51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+   <br>
+   <br>
+   <h2 class="text-center">carousel auto play</h2>
+
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img
+               src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://images.unsplash.com/photo-1656079489834-519c97ed0842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+               class="d-block w-100" alt="...">
+         </div>
+      </div>
+   </div>
+   <br> <br>
+
+   <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+         <div class="carousel-item active" data-bs-interval="10000">
+            <img
+               src="https://images.unsplash.com/photo-1526530619828-b56509ea4288?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>First slide label</h5>
+               <p>Some representative placeholder content for the first slide.</p>
+            </div>
+         </div>
+         <div class="carousel-item" data-bs-interval="2000">
+            <img
+               src="https://images.unsplash.com/photo-1614916179721-56c6b521cab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Second slide label</h5>
+               <p>Some representative placeholder content for the second slide.</p>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <img
+               src="https://plus.unsplash.com/premium_photo-1661587883296-a1deb34637fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+               class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+               <h5>Third slide label</h5>
+               <p>Some representative placeholder content for the third slide.</p>
+            </div>
+         </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+
+
+
+   <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+
+      const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+      const alert = (message, type) => {
+         const wrapper = document.createElement('div')
+         wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+            ` <div>${message}</div>`,
+            ' <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            '</div>'
+         ].join('')
+
+         alertPlaceholder.append(wrapper)
+      }
+
+      const alertTrigger = document.getElementById('liveAlertBtn')
+      if (alertTrigger) {
+         alertTrigger.addEventListener('click', () => {
+            alert('Nice, you triggered this alert message!', 'success')
+         })
+      }
+   </script>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
